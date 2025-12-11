@@ -5,6 +5,7 @@ import javafx.scene.control.Label;
 import javafx.scene.control.TextField;
 import javafx.scene.layout.VBox;
 import javafx.stage.Stage; 
+import javafx.geometry.Insets;
 
 public class ProjetoGeradorDeSenhasGUI extends Application {
     @Override
@@ -12,7 +13,7 @@ public class ProjetoGeradorDeSenhasGUI extends Application {
 
         palco.setTitle("Gerador de Senhas");
 
-        Label labelTamanhoSenha = new Label("Tamanho da Senha");
+        Label labelTamanhoSenha = new Label("Tamanho da Senha:");
         TextField campoTamanhoSenha = new TextField();
         campoTamanhoSenha.setText("8");
         Label labelSenhaGerada = new Label("Senha Gerada:");
@@ -26,8 +27,10 @@ public class ProjetoGeradorDeSenhasGUI extends Application {
             campoSenhaGerada.setText(senha);
         });
 
-        VBox vBox = new VBox (labelTamanhoSenha, campoTamanhoSenha, botaoGerar, labelSenhaGerada, campoSenhaGerada);
-        Scene cena = new Scene(vBox, 250, 200);
+        VBox vbox = new VBox(8, labelTamanhoSenha, campoTamanhoSenha, botaoGerar, labelSenhaGerada, campoSenhaGerada);
+        vbox.setPadding(new Insets(5));
+        vbox.setAlignment(javafx.geometry.Pos.CENTER_LEFT); 
+        Scene cena = new Scene(vbox, 260, 240);
         palco.setScene(cena);
         palco.show();
     }
