@@ -1,0 +1,12 @@
+{
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "type": "java",
+            "name": "Launch JavaFX",
+            "request": "launch",
+            "mainClass": "ProjetoGeradorDeSenhasGUI",
+            "vmArgs": "--module-path \"C:/java/javafx/lib\" --add-modules javafx.controls,javafx.fxml"
+        }
+    ]
+}
