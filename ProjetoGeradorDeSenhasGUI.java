@@ -15,10 +15,9 @@ public class ProjetoGeradorDeSenhasGUI extends Application {
         Label labelTamanhoSenha = new Label("Tamanho da Senha");
         TextField campoTamanhoSenha = new TextField();
         campoTamanhoSenha.setText("8");
-
-        Label labelSenhaGerada = new Label ("Senha Gerada");
+        Label labelSenhaGerada = new Label("Senha Gerada:");
         TextField campoSenhaGerada = new TextField();
-        campoTamanhoSenha.setEditable(false);
+        campoSenhaGerada.setEditable(false);
 
         Button botaoGerar = new Button("Gerar Senha");
         botaoGerar.setOnAction ( e -> {
