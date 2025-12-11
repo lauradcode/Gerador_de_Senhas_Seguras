@@ -18,8 +18,13 @@ O projeto utiliza JavaFX para construir uma interface leve e responsiva, com os 
 <h3>🔒 Funcionalidades</h3>
 
 ✔ Geração de senhas fortes e aleatórias
+
 ✔ Inclui letras maiúsculas, minúsculas, números e símbolos
+
 ✔ Uso de java.security.SecureRandom
+
 ✔ Interface gráfica (GUI) em JavaFX
+
 ✔ Usuário define o tamanho desejado
+
 ✔ Senha exibida automaticamente na tela
