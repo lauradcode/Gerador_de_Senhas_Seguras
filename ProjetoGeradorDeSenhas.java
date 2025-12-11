@@ -3,7 +3,7 @@ import java.util.Scanner;
 
 public class ProjetoGeradorDeSenhas {
 
-    private static final String CARACTERES = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789!@#$%&*()_+-=[]|,./?><";
+    private static final String CARACTERES = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789!@#$%&*()_+-=[]|./";
 
     public static String gerarSenha(int comprimento) {
         SecureRandom geradorDeNumeroAleatorio = new SecureRandom();

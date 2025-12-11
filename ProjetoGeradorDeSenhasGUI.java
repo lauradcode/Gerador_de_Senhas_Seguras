@@ -28,7 +28,7 @@ public class ProjetoGeradorDeSenhasGUI extends Application {
         });
 
         VBox vbox = new VBox(8, labelTamanhoSenha, campoTamanhoSenha, botaoGerar, labelSenhaGerada, campoSenhaGerada);
-        vbox.setPadding(new Insets(5));
+        vbox.setPadding(new Insets(12));
         vbox.setAlignment(javafx.geometry.Pos.CENTER_LEFT); 
         Scene cena = new Scene(vbox, 260, 240);
         palco.setScene(cena);
